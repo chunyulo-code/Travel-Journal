@@ -1,0 +1,106 @@
+* {
+  padding-right: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: rgb(241, 241, 241);
+}
+.journal-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 550px;
+  .header {
+    height: 55px;
+    background-color: #f55a5a;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .header-icon {
+      height: 24px;
+      margin-right: 10px;
+    }
+    .header-title {
+      color: white;
+    }
+  }
+  .mainContent {
+    padding: 45px 40px;
+    .card {
+      width: 470px;
+      display: flex;
+      margin-bottom: 36px;
+      .card-img-container {
+        min-width: 125px;
+        height: 168px;
+        margin-right: 15px;
+        .card-img {
+          width: 100%;
+          height: 100%;
+          object-fit: fit;
+          border-radius: 5px;
+        }
+      }
+      .card-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        .location {
+          margin-bottom: 6px;
+          display: flex;
+          align-items: center;
+          .location-icon {
+            height: 10px;
+          }
+          .countryName {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10.24px;
+            line-height: 12px;
+            letter-spacing: 0.17em;
+            color: #2b283a;
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+          .location-map-link {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10.24px;
+            line-height: 12px;
+            text-decoration-line: underline;
+          }
+        }
+        .resortName {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 30px;
+          color: #2b283a;
+          margin-bottom: 15px;
+        }
+        .duration {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 10.24px;
+          line-height: 12px;
+          color: #2b283a;
+          margin-bottom: 8px;
+        }
+        .brief-intro {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 10.24px;
+          line-height: 150%;
+
+          color: #2b283a;
+        }
+      }
+    }
+  }
+}
